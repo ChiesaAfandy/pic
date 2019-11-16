@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:pic/barcode.dart';
-import 'package:pic/pending.dart';
+import 'package:pic/requestList.dart';
 
-class RequestList extends StatefulWidget {
+import 'barcode.dart';
+
+class Pending extends StatefulWidget {
   @override
-  _RequestListState createState() => _RequestListState();
+  _PendingState createState() => _PendingState();
 }
 
-class _RequestListState extends State<RequestList> {
+class _PendingState extends State<Pending> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(actions: <Widget>[
-        IconButton(icon: Icon(Icons.access_time, ), onPressed: () {Navigator.push(context,MaterialPageRoute(
+        appBar: AppBar(title: Text("Pending Request"), actions: <Widget>[
+        IconButton(icon: Icon(Icons.access_time, color: Colors.red), onPressed: () {Navigator.push(context,MaterialPageRoute(
                                 builder: (context) =>
-                                Pending()));},),
+                                RequestList()));},),
 
         IconButton(icon: Icon(Icons.camera), onPressed: () {Navigator.push(context,MaterialPageRoute(
                                 builder: (context) =>
