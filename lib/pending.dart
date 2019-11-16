@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pic/requestList.dart';
 
 import 'barcode.dart';
 
@@ -14,9 +13,7 @@ class _PendingState extends State<Pending> {
      return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: Text("Pending Request"), actions: <Widget>[
-        IconButton(icon: Icon(Icons.access_time, color: Colors.red), onPressed: () {Navigator.push(context,MaterialPageRoute(
-                                builder: (context) =>
-                                RequestList()));},),
+        IconButton(icon: Icon(Icons.access_time, color: Colors.red), onPressed: () {Navigator.pop(context);},),
 
         IconButton(icon: Icon(Icons.camera), onPressed: () {Navigator.push(context,MaterialPageRoute(
                                 builder: (context) =>
