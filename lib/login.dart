@@ -127,7 +127,7 @@ class _LoginState extends State<Login> {
                             ),
                             controller: passText,
                           ),
-                        ),
+                        ),Text(""),
 
                         //tombol Log In
                         FlatButton(
@@ -136,7 +136,7 @@ class _LoginState extends State<Login> {
                           ),
                           color: Colors.blue,
                           textColor: Colors.white,
-                          child: Text("Log In"),
+                          child: Text("Log In", style: TextStyle(fontSize: 18),),
                           onPressed: () {
                             if (_formKey.currentState.validate()) {
                               Navigator.pushReplacement(context,MaterialPageRoute(
@@ -148,6 +148,8 @@ class _LoginState extends State<Login> {
                             
                           },
                           ),
+                          Text("")
+                          ,
 
                           //tombol forgot pass
                           FlatButton(
@@ -156,7 +158,7 @@ class _LoginState extends State<Login> {
                           ),
                           color: Colors.black12,
                           textColor: Colors.black,
-                          child: Text("Forgot Password"),
+                          child: Text("Forgot Password",style: TextStyle(fontSize: 15)),
                           onPressed: (){},
                           )
 

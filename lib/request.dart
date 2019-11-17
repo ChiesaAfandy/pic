@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pic/request_model.dart';
+import 'package:pic/requestList.dart';
+
 
 class Request extends StatefulWidget {
   @override
@@ -99,28 +100,28 @@ class _RequestState extends State<Request> {
            children: <Widget>[
    
            Text("Company : "),
-           Container(child: TextField(decoration: InputDecoration(
+           Container(padding: EdgeInsets.only(bottom: 40),child: TextField(decoration: InputDecoration(
              hintText: "Insert Company Name"
            ),
 
            ),),
 
            Text("Requester : "),
-           Container(child: TextField(decoration: InputDecoration(
+           Container(padding: EdgeInsets.only(bottom: 40),child: TextField(decoration: InputDecoration(
              hintText: "Admin Name"
            ),
 
            ),),
 
            Text("Order Date : "),
-           Container(child: TextField(decoration: InputDecoration(
+           Container(padding: EdgeInsets.only(bottom: 40),child: TextField(decoration: InputDecoration(
              hintText: "Insert Order Date"
            )
 
            ),),
            
            Text("Description : "),
-           Container(child: TextField(keyboardType: TextInputType.multiline,
+           Container(padding: EdgeInsets.only(bottom: 40),child: TextField(keyboardType: TextInputType.multiline,
             maxLines: null,
   
            ),),
@@ -131,7 +132,12 @@ class _RequestState extends State<Request> {
 
            Padding(padding: EdgeInsets.only(
              bottom: MediaQuery.of(context).viewInsets.bottom
-           ),)
+           ),),
+
+           FlatButton(color: Colors.blue, child: Text("Confirm",style: TextStyle(fontSize: 21),), onPressed: () 
+           {Navigator.pushReplacement(context,MaterialPageRoute(
+                                builder: (context) =>
+                                RequestList()));},)
 
            ],
          ),

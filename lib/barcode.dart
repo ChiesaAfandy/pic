@@ -45,7 +45,7 @@ class _BarcodeState extends State<Barcode> {
       setState(() {
         qrText = scanData;
 
-        Navigator.push(context, MaterialPageRoute(builder: (context) => ResultPage()));
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => ResultPage()));
       });
     });
   }
