@@ -47,7 +47,11 @@ class _RequestState extends State<Request> {
 
            Container(
              
-           )
+           ),
+
+           Padding(padding: EdgeInsets.only(
+             bottom: MediaQuery.of(context).viewInsets.bottom
+           ),)
 
            ],
          ),
