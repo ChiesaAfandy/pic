@@ -43,7 +43,7 @@ class _RequestState extends State<Request> {
   
            ),),
            Text(""),
-           Text("Order List" ,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+           Text("Order List" ,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold), textAlign: TextAlign.center,),
 
            Container(
              

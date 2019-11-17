@@ -94,7 +94,7 @@ class _LoginState extends State<Login> {
                               hintText: "Username",
                               prefixIcon: Icon(Icons.message),
                               border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(5),
                               )
                             ),
                             controller: emailText,
@@ -122,7 +122,7 @@ class _LoginState extends State<Login> {
                               hintText: "password",
                               prefixIcon: Icon(Icons.lock),
                               border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10)
+                                borderRadius: BorderRadius.circular(5)
                               )
                             ),
                             controller: passText,
@@ -132,7 +132,7 @@ class _LoginState extends State<Login> {
                         //tombol Log In
                         FlatButton(
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30.0)
+                            borderRadius: BorderRadius.circular(10.0)
                           ),
                           color: Colors.blue,
                           textColor: Colors.white,
@@ -152,7 +152,7 @@ class _LoginState extends State<Login> {
                           //tombol forgot pass
                           FlatButton(
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30.0)
+                            borderRadius: BorderRadius.circular(5.0)
                           ),
                           color: Colors.black12,
                           textColor: Colors.black,
