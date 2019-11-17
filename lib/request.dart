@@ -82,9 +82,6 @@ class _RequestState extends State<Request> {
                                   "amount": amountText.text,
                                   "item": itemText.text,
                                 });
-
-                            
-                                print(_dataItem);
                               },
                             ),
                           )
@@ -145,24 +142,19 @@ class _RequestState extends State<Request> {
 
 
 
-List _dataItem = [{
-  "unit": "KG",
-  "item": "Pasir",
-  "amount": "29",
-}];
+List _dataItem = [];
 
 Widget _buildPostList() {
     return ListView.builder(
         shrinkWrap: true,
+        physics: NeverScrollableScrollPhysics(),
         itemBuilder: (BuildContext context, int index) {
-          RequestModel req = new RequestModel.from(_dataItem);
-          print(_dataItem[index].item);
           return Column(
             children: <Widget>[
               Padding(
                 child: new ListTile(
-                  title: Text("he"),
-                  subtitle: Text("e") ,
+                  title: Text(_dataItem[index]["item"]),
+                  subtitle: Text(_dataItem[index]["amount"] + _dataItem[index]["unit"]),
                   ),
                 padding: EdgeInsets.all(10.0),
               ),
