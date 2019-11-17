@@ -13,14 +13,9 @@ class _RequestState extends State<Request> {
       home:Scaffold(resizeToAvoidBottomInset: false,
         appBar: AppBar(title: Text("Request"),),
         body: Container(margin: EdgeInsets.all(20),
-         child: Column(
+         child: ListView(
            children: <Widget>[
-             Text("Title :"),
-           Container(child: TextFormField(decoration: InputDecoration(
-             hintText: "Insert Request Title"
-           ),
-             
-           ),),
+   
            Text("Company : "),
            Container(child: TextField(decoration: InputDecoration(
              hintText: "Insert Company Name"
@@ -45,9 +40,10 @@ class _RequestState extends State<Request> {
            Text("Description : "),
            Container(child: TextField(keyboardType: TextInputType.multiline,
             maxLines: null,
-
-           ),
-           ),Text("Order List"),
+  
+           ),),
+           Text(""),
+           Text("Order List" ,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
 
            Container(
              

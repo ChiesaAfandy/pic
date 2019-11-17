@@ -18,13 +18,13 @@ class _ResultPageState extends State<ResultPage> {
               Kata(title: "Order Date : ", isi: "2019-08-26 11:12",),
               Kata(title: "Description : ", isi: "Lorem ipsum",),
               Text(""),
-              Text("Order List" ,style: TextStyle(fontSize: 18),),
+              Text("Order List" ,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
 
 
               Spacer(),
               Align(alignment: Alignment.bottomCenter, 
                 child: FlatButton(padding: EdgeInsets.only(left: 100,right: 100,top: 10,bottom: 10),
-                  child: Text("Confirm",style: TextStyle(fontSize: 21),), onPressed: () {}, color: Colors.blue,)),
+                  child: Text("Confirm",style: TextStyle(fontSize: 21),), color: Colors.blue, onPressed: () {},)),
                   Text("")
             ],
           ),
